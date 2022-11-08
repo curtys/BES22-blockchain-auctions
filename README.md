@@ -1,5 +1,7 @@
 # BES 2022 - Blockchain Auctions API
 
+[![DOI](https://zenodo.org/badge/563454888.svg)](https://zenodo.org/badge/latestdoi/563454888)
+
 Implementation of an API and smart cpontract for distributed auctions for EVM compatible blockchains. Does not inlcude a frontend. Refer to `openapi.yaml` for detailed API documentation.
 
 ## Requirements
