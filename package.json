@@ -1,0 +1,31 @@
+{
+  "name": "blockchain-auctions",
+  "version": "0.1.0",
+  "description": "Prototype of an e-auctioning system for HICSS 2023",
+  "main": "src/main/server.js",
+  "directories": {
+    "test": "test",
+    "src": "src"
+  },
+  "dependencies": {
+    "@truffle/contract": "^4.2.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "ioredis": "^4.16.3",
+    "web3": "^1.2.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3",
+    "rimraf": "^3.0.2",
+    "truffle-assertions": "^0.9.2"
+  },
+  "scripts": {
+    "start": "node ./src/main/server.js",
+    "start:watch": "nodemon --watch '{src,test}/**/*' --exec node ./src/main/server.js",
+    "clean": "rimraf -r node_modules/",
+    "test": "truffle test"
+  },
+  "author": "Simon Curty",
+  "license": "MIT"
+}
